@@ -1,0 +1,40 @@
+@mixin fullsize($position) {
+    position: $position;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+@mixin centerX($position:relative) {
+    position: $position;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin centerY($position:relative) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin centerXY($position:relative) {
+    position: $position;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+@mixin positionXY($x, $y, $center:false) {
+    position: absolute;
+    top: $y;
+    left: $x;
+
+    @if($center==true) {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+@mixin animate($time:.5s) {
+    transition: all $time ease-in-out;
+}
