@@ -1,0 +1,24 @@
+-
+    var navItems = [
+
+        {"id" : "#about", "name":"À propos", "active":"active"},
+        {"id" : "#cv", "name":"Expérience"},
+        {"id" : "#skills", "name":"Compétences"},
+        {"id" : "#contact", "name":"Contact"}
+    ]
+
+
+nav.nav-home#nav-home
+    .nav-content
+        ul
+            each item in navItems
+                li(class=item.active)
+                    a(href=item.link, title=item.name)=item.name
+
+aside.nav-aside#nav-aside
+    .nav-content
+        ul
+            each item in navItems
+                li(class=item.active)
+                    a(href=item.link, title=item.name)
+                        span.label=item.name
