@@ -1,7 +1,45 @@
 .home#home {
- // @extend %test;
-  @include fullsize(absolute);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 59%, rgba(0, 0, 0, .99) 100%), url("../img/background_dev.jpg") no-repeat;
-
+  // @extend %test;
+  @include fullsize(relative);
+  height: 100vh;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.99) 0%,
+      rgba(0, 0, 0, 0.7) 40%,
+      rgba(0, 0, 0, 0.99) 100%),
+    url("../img/background_dev.jpg") no-repeat;
   background-size: cover;
+
+  .logo {
+    @include positionXY(25vw, 50vh, true);
+
+    width: max-content;
+
+    .img {
+      perspective: 20;
+    }
+  }
+
+  .bio {
+    @include positionXY(75vw, 50vh, true);
+    width: max-content;
+
+    p {
+      position: relative;
+      font-size: 32px;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+
+      // &:first-line {
+      //   left: 0;
+      // }
+    }
+
+    h3 {
+      font-style: italic;
+    }
+  }
+
+  * {
+    @extend %test;
+  }
 }

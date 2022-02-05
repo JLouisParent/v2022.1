@@ -1,9 +1,9 @@
 -
     var navItems = [
-
-        {"id" : "#about", "name":"À propos", "active":"active"},
-        {"id" : "#cv", "name":"Expérience"},
-        {"id" : "#skills", "name":"Compétences"},
+        {"id" : "#about", "name":"Moi", "active":"active"},
+        {"id" : "#work", "name":"Work"},
+        {"id" : "#skills", "name":"Skills"},
+        {"id" : "#scholl", "name":"Formation"},
         {"id" : "#contact", "name":"Contact"}
     ]
 
@@ -15,10 +15,10 @@ nav.nav-home#nav-home
                 li(class=item.active)
                     a(href=item.link, title=item.name)=item.name
 
-aside.nav-aside#nav-aside
-    .nav-content
-        ul
-            each item in navItems
-                li(class=item.active)
-                    a(href=item.link, title=item.name)
-                        span.label=item.name
+//- aside.nav-aside#nav-aside
+//-     .nav-content
+//-         ul
+//-             each item in navItems
+//-                 li(class=item.active)
+//-                     a(href=item.link, title=item.name)
+//-                         span.label=item.name

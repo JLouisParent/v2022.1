@@ -1,0 +1,16 @@
+-
+    var socials = [
+        {"name":"Twitter","short":"Tw","link":"https://www.twitter.com/@jlp_bsc","color":"#1da1f2"},
+        {"name":"Facebook","short":"Fb","link":"https://www.facebook.com/jlparent4","color":"#3b5998"},
+        {"name":"Instagram","short":"Is","link":"https://www.instagram.com/jlparent4","color":"#c32aa3"},
+        {"name":"Linked'In","short":"Li","link":"https://www.linkedin.com/in/jean-louis-parent-00b59746","color":"#007bb5"},
+        {"name":"Github","short":"Gh","link":"https://www.github.com","color": "#4267b2"}
+    ]
+
+
+section.socials
+    .socials-content
+        ul
+            each item in socials
+                li(class=item.active)
+                    a(href=item.link, title=item.name)=item.short

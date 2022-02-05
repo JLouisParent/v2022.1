@@ -1,0 +1,4 @@
+.quote {
+  width: max-content;
+  @include positionXYr(1.5vw, 95vh);
+}

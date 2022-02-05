@@ -1,0 +1,18 @@
+.socials {
+  position: fixed;
+  top: 10px;
+  right: 50px;
+
+  ul>li {
+    display: inline-block;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  * {
+    @extend %test2;
+  }
+}

@@ -1,14 +1,15 @@
-.nav-home{
-    position: fixed;
-    top: 0;
-    left: calc(100% - 800px);   // @extend %test2;
-    ul > li {
-        display: inline-block;
-    }
-    width : $navbar-width;
-    height: 30px;
-    //background-color : rgba(255,255,255,0.0);
-   // filter: blur(4px);
-    background: radial-gradient(circle at 50% 50%,rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
-    backdrop-filter: blur(4px);
+.nav-home {
+  @include positionXY(80vw, 15vh);
+
+  // width: $navbar-width;
+  height: 30px;
+  //background-color : rgba(255,255,255,0.0);
+  // filter: blur(4px);
+  // background: radial-gradient(circle at 50% 50%,rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+  //backdrop-filter: blur(8px);
+  z-index: 1;
+
+  * {
+    @extend %test3;
+  }
 }
