@@ -1,5 +1,9 @@
-.nav-home {
-  @include positionXY(80vw, 15vh);
+.nav {
+
+  @extend %test3;
+
+  width: 100vw;
+  top: 100vh;
 
   // width: $navbar-width;
   height: 30px;
@@ -7,9 +11,31 @@
   // filter: blur(4px);
   // background: radial-gradient(circle at 50% 50%,rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
   //backdrop-filter: blur(8px);
-  z-index: 1;
+
+  .nav-content {
+    position: relative;
+    left: 75vw;
+  }
+
+  .mini-logo {
+    position: absolute;
+    font-family: 'Rock Salt', cursive;
+    left: 10vw;
+    top: 5px;
+  }
+
+  ul>li {
+    display: inline-block;
+    padding: 0 15px;
+  }
 
   * {
     @extend %test3;
   }
+
+  &.static {
+    position: fixed;
+    top: 0;
+  }
+
 }

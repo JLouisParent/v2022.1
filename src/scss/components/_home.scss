@@ -2,17 +2,23 @@
   // @extend %test;
   @include fullsize(relative);
   height: 100vh;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.99) 0%,
-      rgba(0, 0, 0, 0.7) 40%,
-      rgba(0, 0, 0, 0.99) 100%),
-    url("../img/background_dev.jpg") no-repeat;
-  background-size: cover;
+  // background: linear-gradient(to bottom,
+  //     rgba(0, 0, 0, 0.99) 0%,
+  //     rgba(0, 0, 0, 0.7) 40%,
+  //     rgba(0, 0, 0, 0.99) 100%),
+  //   url("../img/background_dev.jpg") no-repeat;
+  // background-size: cover;
+
+  background: rgba(20, 20, 25);
 
   .logo {
-    @include positionXY(25vw, 50vh, true);
+    @include positionXY(15vw, 40vh, true);
 
     width: max-content;
+
+    font-family: 'Rock Salt', cursive;
+    font-size: 230px;
+    transform: rotate(-34deg);
 
     .img {
       perspective: 20;
@@ -23,11 +29,11 @@
     @include positionXY(75vw, 50vh, true);
     width: max-content;
 
-    p {
+    h2 {
       position: relative;
       font-size: 32px;
-      padding-left: 1.5em;
-      text-indent: -1.5em;
+      padding-left: 1vw;
+      text-indent: -1vw;
 
       // &:first-line {
       //   left: 0;
@@ -37,7 +43,25 @@
     h3 {
       font-style: italic;
     }
+
+    .bio-text {
+      width: 300px;
+    }
+
   }
+
+
+  .email {
+    @include positionXY(85vw, 95vh, true);
+    width: max-content;
+  }
+
+  .click {
+    @include positionXY(50vw, 98vh, true);
+    width: max-content;
+  }
+
+
 
   * {
     @extend %test;
