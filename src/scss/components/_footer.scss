@@ -1,6 +1,9 @@
 .footer {
   @extend %test;
 
+  height: 70vh;
+  width: 100vw;
+
   background: #333;
 
   * {

@@ -178,10 +178,13 @@ body {
 
 .content {
   position: relative;
-  top: 100%;
-  left: 0;
   background-color: #222;
 }
+.content .content-wrapper {
+  width: 80vw;
+  margin: 0 10vw;
+}
+
 .quote {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -204,6 +207,8 @@ body {
   text-decoration: none;
 }
 .footer {
+  height: 70vh;
+  width: 100vw;
   background: #333;
 }
 html {
