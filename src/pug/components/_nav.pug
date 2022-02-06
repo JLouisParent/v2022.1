@@ -1,21 +1,10 @@
--
-  var navItems = [
-    {"id" : "#about", "name":"Moi", "active":"active"},
-    {"id" : "#work", "name":"Work"},
-    {"id" : "#skills", "name":"Skills"},
-    {"id" : "#scholl", "name":"Formation"},
-    {"id" : "#contact", "name":"Contact"}
-  ]
-
-
-
 nav.nav.static#nav
 
-  .mini-logo
-    | JL P
+    .mini-logo
+        | JL P
 
-  .nav-content
-    ul
-      each item in navItems
-        li(class=item.active)
-          a(href=item.link, title=item.name)=item.name
+    .nav-content
+        ul
+            each item in navItems
+                li(class=item.active)
+                    a(href=item.link, title=item.name)=item.name
