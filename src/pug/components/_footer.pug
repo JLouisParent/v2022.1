@@ -1,0 +1,22 @@
+.footer
+    .left-content
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, deserunt est. Dicta amet exercitationem in quo hic eveniet minima voluptate voluptatem rerum dolorem. Minima placeat suscipit, odit amet consequuntur fugiat.
+
+        p=email
+
+        .footer-socials
+            ul
+                each item in socials
+                    li(class=item.active)
+                        a(href=item.link, title=item.name)=item.name
+    .right-content
+        p.logo Jean-Louis Parent 
+        span.city Annecy, FR
+
+        p.site-update Feb 2022
+
+        a.btt Back to top
+
+    .bottom-content 
+        p.cr @2022 Jean-Louis Parent 
+        span.sv site version v2022.1

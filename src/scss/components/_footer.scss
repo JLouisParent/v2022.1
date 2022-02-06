@@ -1,0 +1,9 @@
+.footer {
+  @extend %test;
+
+  background: #333;
+
+  * {
+    @extend %test;
+  }
+}
